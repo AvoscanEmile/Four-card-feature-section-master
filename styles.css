@@ -1,0 +1,50 @@
+/* CSS variables */
+
+:root {
+
+    /* Colors */
+
+    --clr-gray: hsl(0, 0%, 98%);
+    --clr-darker-gray: hsl(229, 6%, 66%);
+    --clr-darkest-gray: hsl(234, 12%, 34%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-blue: hsl(212, 86%, 64%);
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-orange: hsl(34, 97%, 64%);
+
+    /* Fonts */
+
+    --ff: 'Poppins', sans-serif;
+    --fw-extra-light: 200;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fs-h1: 36px;
+    --fs-h2: 24px;
+    --fs-p: 18px;
+
+}    
+
+/* General styling */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". m ."
+    ". f .";
+    background-color: var(--clr-gray);
+}
+
+/*  */
